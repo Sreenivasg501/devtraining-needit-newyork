@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="2" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="9" type="collection">
         <element label="Color" max_length="40" name="color" type="color"/>
         <element label="country" max_length="400" name="country" type="string"/>
         <element default="1200" display="true" label="Name" max_length="40" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Close date" mandatory="true" max_length="40" name="u_glide_date_1" type="glide_date"/>
-        <element attributes="encode_utf8=false" label="Requested for" max_length="32" name="u_requested_or" reference="ts_v4_8_0" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="other" max_length="40" name="u_other" type="string"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_or" reference="ts_v4_8_0" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Human Resources" sequence="0" value="hr"/>
